@@ -1,5 +1,5 @@
 //
-// Project: Refresh
+// Project: Refreshing
 // Date: 6/20/20
 
 import Foundation
@@ -7,7 +7,7 @@ import SwiftUI
 import UIKit
 
 @available(iOS 13.0, *)
-struct TestRefreshing<Content: View>: View {
+public struct TestRefreshing<Content: View>: View {
   @State private var previousScrollOffset: CGFloat = 0
   @State private var scrollOffset: CGFloat = 0.5
   @State private var frozen: Bool = false
@@ -23,7 +23,7 @@ struct TestRefreshing<Content: View>: View {
     self.onRefresh = onRefresh
   }
 
-  var body: some View {
+  public var body: some View {
     return VStack {
       ScrollView(showsIndicators: false) {
         ZStack(alignment: .top) {
