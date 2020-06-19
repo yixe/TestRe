@@ -18,7 +18,7 @@ public struct TestRefreshing<Content: View>: View {
   let content: Content
   var onRefresh: ()-> Void
 
-  init(onRefresh: @escaping ()-> Void, @ViewBuilder content: () -> Content) {
+  public init(onRefresh: @escaping ()-> Void, @ViewBuilder content: () -> Content) {
     self.content = content()
     self.onRefresh = onRefresh
   }
