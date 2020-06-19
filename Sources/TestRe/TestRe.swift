@@ -7,7 +7,7 @@ import SwiftUI
 import UIKit
 
 @available(iOS 13.0, *)
-struct TestRe<Content: View>: View {
+struct TestRefreshing<Content: View>: View {
   @State private var previousScrollOffset: CGFloat = 0
   @State private var scrollOffset: CGFloat = 0.5
   @State private var frozen: Bool = false
